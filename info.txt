@@ -1,0 +1,2 @@
+npx create-next-app my-app
+npm install -g npm@9.6.7
