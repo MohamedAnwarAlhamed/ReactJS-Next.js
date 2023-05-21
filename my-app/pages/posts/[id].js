@@ -12,7 +12,7 @@ export default function Details(props) {
 }
 
 export async function getStaticPaths() { 
-  const res = await fetch('https://jsonplaceholder.typicode.com/posts?_limit=6')
+  const res = await fetch('http://localhost:3000/api/posts')
   const data = await res.json()
   const paths = data.map(d => {
     return {
@@ -27,7 +27,7 @@ export async function getStaticPaths() {
 
 
 export async function getStaticProps(context) {
-  const res = await fetch(`https://jsonplaceholder.typicode.com/posts/${context.params.id}`)  
+  const res = await fetch(`http://localhost:3000/api/posts/${context.params.id}`)  
   const data = await res.json()
   return {
     props: {
