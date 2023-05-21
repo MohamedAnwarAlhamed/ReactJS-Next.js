@@ -1,11 +1,10 @@
 import { Inter } from 'next/font/google'
-import Navbar from '@/componect/navbar'
+import Navbar from '@/componect/Navbar'
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
   return (
     <>
-      <Navbar />
       Home component
     </>
   )
