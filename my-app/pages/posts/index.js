@@ -1,4 +1,5 @@
 // post component
+import Link from 'next/link'
 
 export default function Posts(props) {
     
@@ -7,8 +8,10 @@ export default function Posts(props) {
             dynamic
             {props.posts.map(post => (
                 <div key={post.id}>
-                    <h2>{post.title}</h2>
-                </div>
+                <Link href={`/posts/${post.id}`} >
+                    {post.title}
+                    </Link>
+                    </div>
             )) }
         </div>
     )
