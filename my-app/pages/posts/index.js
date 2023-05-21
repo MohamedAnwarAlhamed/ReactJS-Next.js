@@ -4,7 +4,7 @@ export default function Posts() {
     
     return (
         <>
-            Posts component
+            dynamic 
         </>
     )
 }
